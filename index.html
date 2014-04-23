@@ -4,40 +4,40 @@
   <title>player</title>
   <link rel="stylesheet" href="common.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/player.js"></script>
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <!-- fonts - decide later, all for now -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-<div id="sidebar">
-  <div id="sidebar-roomlist">
-    <ul>Rooms
-      <li>chillax</li>
-      <li>example item 2</li>
-      <li>postrock</li>
-      <li>beatz</li>
-    </ul>
-  </div>
-</div>
-
-<div id="content">
+<div id="content" class="panel">
   <div class="centered">
     <div id="player">
       <div class="columns">
         <div class="leftcol">
-          <div class="vertcenter"></div>
-        </div>
-        <div class="midcol">
-          <div class="vertcenter"></div>
+          <div class="vertcenter">
+            <div id="player-videowrap">
+              <img src="i/albumart.jpg">
+            </div>
+
+            <div id="player-info">
+              <div id="info-songname">This Is What It Feels Like (Audien Mix)</div>
+              <div id="info-artist">Armin van Buuren feat. Trevor Guthrie</div>
+            </div>
+          </div>
         </div>
         <div class="rightcol">
-          <div class="vertcenter"></div>
+          <div class="vertcenter">
+            <button id="add-button"></button>
+            <button id="play-button"></button>
+            <button id="stop-button"></button>
+          </div>
         </div>
-      </div>
-
-      <div id="player-info">
-        <div id="info-songname">This Is What It Feels Like (Audien Mix)</div>
-        <div id="info-artist">Armin van Buuren feat. Trevor Guthrie</div>
       </div>
     </div>
 
@@ -69,6 +69,18 @@
       </div>
     </div>
 
+  </div>
+</div>
+
+<!-- comes after content to be on top of content -->
+<div id="sidebar" class="panel">
+  <div id="sidebar-roomlist">
+    <ul>Rooms
+      <li>chillax</li>
+      <li>example item 2</li>
+      <li>postrock</li>
+      <li>beatz</li>
+    </ul>
   </div>
 </div>
 
