@@ -47,9 +47,9 @@ body {
 
 #player {
     /* contain children */
-    overflow: auto;
     margin: 0 auto;
     width: 60%;
+    overflow: auto;
 }
 #player-videowrap {
     width: 100%;
@@ -80,16 +80,55 @@ body {
     bottom: 0;
     right: 0;
     position: absolute;
+
+    /* for the buttons */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* make button box-shadow show,
+    since player div has overflow:auto; */
+    padding: 6px;
 }
 .vertcenter {
     height: 100%;
 }
 
-button {
+.button {
+    display: block;
+    background-color: white;
     height: 25%;
     width: auto;
-    display: block;
     margin-bottom: 10px;
+    position: relative;
+    top: 0;
+
+    border-bottom: 3px solid #222;
+    border-radius: 10px;
+    -moz-box-shadow: 0 0 6px #222;
+    -webkit-box-shadow: 0 0 6px #222;
+    box-shadow: 0 0 6px #222;
+
+    -webkit-transition: top 0.1s ease;
+    -moz-transition: top 0.1s ease;
+    transition: top 0.1s ease;
+}
+.button:active {
+    position: relative;
+    top: 3px;
+    border-bottom: none;
+    margin-bottom: 13px;
+}
+.add-button {
+    background-color: #1abc9c;
+}
+.play-button {
+    background-color: #3498db;
+}
+.stop-button {
+    background-color: #7f8c8d;
 }
 
 ul {
