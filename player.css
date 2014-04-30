@@ -1,0 +1,188 @@
+.panel {
+    height: 100%;
+}
+#sidebar {
+    height: 100%;
+    width: 1%;
+    background-color: #cea06a;
+    position: fixed;
+    left:0;
+    top:0;
+    overflow: hidden;
+
+    transition: 0.3s;
+-moz-transition: 0.3s;
+-webkit-transition: 0.3s;
+}
+#sidebar:hover {
+    width:10%;
+}
+#sidebar-roomlist {
+    margin: 0 auto;
+    width: 80%;
+    overflow: hidden;
+}
+
+
+#player {
+    /* contain children */
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 60%;
+    overflow: auto;
+
+    padding: 50px 60px;
+    background-color: #b1a195;
+    border-radius: 10px;
+}
+#player-videowrap {
+    width: 70%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#player-videowrap img {
+    width: 100%;
+    height: auto;
+}
+#player-info {
+    margin-top: 15px;
+}
+.columns {
+    position: relative;
+    overflow: auto;
+    margin: 0 auto;
+}
+.leftcol {
+    float: left;
+    width: 90%;
+}
+.rightcol {
+    float: left;
+    width: 10%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    /* for the buttons */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* make button box-shadow show,
+    since player div has overflow:auto; */
+    padding: 6px;
+    position: absolute;
+}
+.vertcenter {
+    height: 100%;
+}
+
+#buttonbar {
+    height: 215px;
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    margin-top: -107.5px;
+}
+.button {
+    display: block;
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;2
+    position: relative;
+    top: 0;
+
+    border-bottom: 5px solid #222;
+    border-radius: 10px;
+/*    -moz-box-shadow: 0 0 6px #222;
+    -webkit-box-shadow: 0 0 6px #222;
+    box-shadow: 0 0 6px #222;*/
+
+    -webkit-transition: top 0.10s ease, border-bottom 0.10s ease,
+    margin-bottom 0.10s ease;
+    -moz-transition: top 0.10s ease, border-bottom 0.10s ease,
+    margin-bottom 0.10s ease;
+    transition: top 0.10s ease, border-bottom 0.10s ease,
+    margin-bottom 0.10s ease;
+}
+.button:active {
+    position: relative;
+    top: 3px;
+    border-width: 2px;
+    margin-bottom: 13px;
+}
+.add-button {
+    background-color: #984080;
+    border-color: #883772;
+}
+.play-button {
+    background-color: #bb333a;
+    border-color: #a72d32;
+}
+.stop-button {
+    background-color: #cea06a;
+    border-color: #a78356;
+}
+
+
+#info-songname {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+}
+#info-artist {
+    color: white;
+}
+
+#chat {
+    border-radius: 10px;
+    background-color: #883772;
+
+    height: 250px;
+    position: relative;
+    margin-top: 5%;
+    /* contain children */
+    overflow: auto;
+}
+#chatbox-chats {
+    padding-left: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+#chat-who {
+    float: right;
+    padding: 0 20px;
+    font-size: 0.8em;
+    height: 100%;
+    min-width: 60px;
+
+    background-color: #984080;
+}
+.chatbox-name {
+    color: white;
+}
+#entry {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#entry input {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    margin: 0;
+    height: 30px;
+
+    padding-left: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    background-color: #984080;
+    color: white;
+}
+
+
