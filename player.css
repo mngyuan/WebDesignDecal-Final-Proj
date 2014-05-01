@@ -54,11 +54,11 @@
 }
 .leftcol {
     float: left;
-    width: 90%;
+    width: 89%;
 }
 .rightcol {
     float: left;
-    width: 10%;
+    width: 11%;
     top: 0;
     bottom: 0;
     right: 0;
@@ -80,17 +80,17 @@
 }
 
 #buttonbar {
-    height: 215px;
-    width: 60px;
+    height: 165px;
+    width: 45px;
     position: absolute;
     top: 50%;
-    margin-top: -107.5px;
+    margin-top: -82.5px;
 }
 .button {
     display: block;
     background-color: white;
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
     margin-bottom: 10px;2
     position: relative;
     top: 0;

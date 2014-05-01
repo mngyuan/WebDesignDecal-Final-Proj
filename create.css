@@ -1,0 +1,53 @@
+.songrow {
+	height: 100px;
+	width: 500px;
+	margin: 0 auto;
+
+	background: #B1A195;
+}
+.songrow:nth-of-type(even) {
+	background: #666666;
+
+}
+
+.songrow-handle {
+	height: 100%;
+	float: left;
+	width: 100px;
+}
+.songrow-handle a {
+	display: block;
+	margin: 0 auto;
+	height: 20px;
+	width: 50px;
+	position: relative;
+	top: 25px;
+
+	border-top: 15px solid black;
+	border-bottom: 15px solid black;
+}
+
+.songrow-thumbnail {
+	height: 100%;
+	width: 150px;
+	float: left;
+}
+
+.songrow-text {
+	height: 100%;
+	width: 240px;
+	float: left;
+	text-align: left;
+
+	position: relative;
+}
+.songrow-textwrap {
+	position: absolute;
+	width: 100%;
+	bottom: 25px;
+}
+.songrow-textwrap input {
+	width: 210px;
+	background-color: #CEA06A;
+	font-size: 0.8em;
+}
