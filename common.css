@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     color: #F0F1F2;
+    /*color: #E3DFD7;*/
     font-family: "Lato", sans-serif;
     background-color: #cdbaab;
 }
@@ -20,7 +21,19 @@ body {
     margin: 30px auto;
     width: 50%;
     text-align: center;
-    min-width: 500px;
+    min-width: 720px;
+}
+
+#nameplate {
+    color: #FAF5EB;
+    margin-bottom: 10px;
+    margin-left: 35px;
+    font-size: 2em;
+    /*text-align: left;*/
+}
+#nameplate a {
+    color: #E3DFD7;
+    text-decoration: none;
 }
 
 ul {

@@ -1,12 +1,24 @@
+.addbutton {
+	width: 40px;
+	height: 40px;
+	margin: 10px auto;
+	background: url("i/add.png");
+	background-size: cover;
+}
+
+.songrows {
+	overflow: auto;
+}
 .songrow {
 	height: 100px;
 	width: 500px;
 	margin: 0 auto;
 
-	background: #B1A195;
+	background-color: #B1A195;
+	transition: background-color 0.75s ease;
 }
 .songrow:nth-of-type(even) {
-	background: #666666;
+	background-color: #666666;
 
 }
 
@@ -23,19 +35,31 @@
 	position: relative;
 	top: 25px;
 
-	border-top: 15px solid black;
-	border-bottom: 15px solid black;
+	border-top: 15px solid rgba(23,23,23,0.5);
+	border-bottom: 15px solid rgba(23,23,23,0.5);
 }
 
 .songrow-thumbnail {
 	height: 100%;
 	width: 150px;
 	float: left;
+	position: relative;
+}
+.imagewrap {
+	height: 84px;
+	width: 150px;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	margin-top: -42px;
+}
+.imagewrap img {
+	width: 100%;
 }
 
 .songrow-text {
 	height: 100%;
-	width: 240px;
+	width: 210px;
 	float: left;
 	text-align: left;
 
@@ -45,9 +69,36 @@
 	position: absolute;
 	width: 100%;
 	bottom: 25px;
+	padding-left: 20px;
 }
 .songrow-textwrap input {
-	width: 210px;
+	width: 170px;
 	background-color: #CEA06A;
 	font-size: 0.8em;
+}
+
+.songrow-delete {
+	width: 30px;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.deletebutton {
+	top: 50%;
+	height: 30px;
+	margin-top: -15px;
+	position: absolute;
+	width: 30px;
+
+	background: url("i/delete.png");
+	background-size: cover;
+}
+
+.createbutton {
+	margin: 10px auto;
+	height: 50px;
+	width: 100px;
+	line-height: 50px;
+	font-size: 1.5em;
+	background-color: #cea06a;
 }

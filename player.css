@@ -27,7 +27,6 @@
 #player {
     /* contain children */
     margin: 0 auto;
-    margin-top: 10%;
     width: 60%;
     overflow: auto;
 
@@ -96,7 +95,6 @@
     top: 0;
 
     border-bottom: 5px solid #222;
-    border-radius: 10px;
 /*    -moz-box-shadow: 0 0 6px #222;
     -webkit-box-shadow: 0 0 6px #222;
     box-shadow: 0 0 6px #222;*/
@@ -107,6 +105,7 @@
     margin-bottom 0.10s ease;
     transition: top 0.10s ease, border-bottom 0.10s ease,
     margin-bottom 0.10s ease;
+    border-radius: 10px;
 }
 .button:active {
     position: relative;

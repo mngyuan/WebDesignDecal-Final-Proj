@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>explore</title>
+  <title>create</title>
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="create.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="js/player.js"></script>
+  <script src="js/create.js"></script>
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
@@ -16,36 +16,64 @@
 </head>
 <body>
 <div class="centered">
-  <div class="songrow">
-    <div class="songrow-handle"><a class="handle"></a></div>
-    <div class="songrow-thumbnail"></div>
-    <div class="songrow-text">
-      <div class="songrow-textwrap">
-        <h1>video URL</h1>
-        <input type="text" />
+  <div id="nameplate"><a href="index.html">play.</a> create. <a href="explore.html">explore.</a></div>
+  <div class="addbutton"></div>
+
+  <div class="songrows">
+    <div class="songrow">
+      <div class="songrow-handle"><a class="handle"></a></div>
+      <div class="songrow-thumbnail">
+        <div class="imagewrap">
+          <img src="i/thumb1.jpg">
+        </div>
+      </div>
+      <div class="songrow-text">
+        <div class="songrow-textwrap">
+          <h1>video URL</h1>
+          <input type="text" />
+        </div>
+      </div>
+      <div class="songrow-delete">
+        <div class="deletebutton"></div>
+      </div>
+    </div>
+    <div class="songrow">
+      <div class="songrow-handle"><a class="handle"></a></div>
+      <div class="songrow-thumbnail">
+        <div class="imagewrap">
+          <img src="i/thumb2.jpg">
+        </div>
+      </div>
+      <div class="songrow-text">
+        <div class="songrow-textwrap">
+          <h1>video URL</h1>
+          <input type="text" />
+        </div>
+      </div>
+      <div class="songrow-delete">
+        <div class="deletebutton"></div>
+      </div>
+    </div>
+    <div class="songrow">
+      <div class="songrow-handle"><a class="handle"></a></div>
+      <div class="songrow-thumbnail">
+        <div class="imagewrap">
+          <img src="i/thumb3.jpg">
+        </div>
+      </div>
+      <div class="songrow-text">
+        <div class="songrow-textwrap">
+          <h1>video URL</h1>
+          <input type="text" />
+        </div>
+      </div>
+      <div class="songrow-delete">
+        <div class="deletebutton"></div>
       </div>
     </div>
   </div>
-  <div class="songrow">
-    <div class="songrow-handle"><a class="handle"></a></div>
-    <div class="songrow-thumbnail"></div>
-    <div class="songrow-text">
-      <div class="songrow-textwrap">
-        <h1>video URL</h1>
-        <input type="text" />
-      </div>
-    </div>
-  </div>
-  <div class="songrow">
-    <div class="songrow-handle"><a class="handle"></a></div>
-    <div class="songrow-thumbnail"></div>
-    <div class="songrow-text">
-      <div class="songrow-textwrap">
-        <h1>video URL</h1>
-        <input type="text" />
-      </div>
-    </div>
-  </div>
+
+  <div class="createbutton">Create</div>
 </div>
 </div>
 </body>
