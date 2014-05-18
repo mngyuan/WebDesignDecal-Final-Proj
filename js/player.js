@@ -1,3 +1,10 @@
 $(document).ready( function() {
-    $("#player-videowrap").css("border-radius", $("#player-videowrap").height());
+	$('#nav-create').click( function() {
+		$('#modal-overlay').show();
+	});
+	$('#modal-overlay').click( function() {
+		$(this).hide();
+	});
+
+	
 });
