@@ -6,5 +6,11 @@ $(document).ready( function() {
 		$(this).hide();
 	});
 
-	
+	$('#modal-box').click( function(event) {
+		event.stopPropagation();
+	});
+
+	$('.createbutton').click( function() {
+		$('#modal-overlay').hide();
+	});
 });
