@@ -6,6 +6,7 @@
 	overflow: hidden;
 	border-radius: 5px;
 	padding: 0 10px;
+	margin: 0 auto;
 }
 #carouselcontent {
 	width: 2400px;
